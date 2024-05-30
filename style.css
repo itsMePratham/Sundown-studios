@@ -1,0 +1,1469 @@
+@font-face {
+    font-family: pratham;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+
+@font-face {
+    font-family: pratham;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: pratham;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: pratham;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    /* background-color:#EFEAE3 ;  */
+
+    
+}
+
+
+#main
+{
+    
+    position: relative;
+    z-index: 10;
+}
+#page_1
+{
+    min-height: 100vh;
+   width: 100vw;  /* // 100% */
+    background-color:#EFEAE3;
+    position: relative;
+    padding: 0px 2vw;
+}
+
+nav{
+   padding: 2vw 0vw;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   position: relative;
+   z-index: 110;
+
+   justify-content: space-between;
+ 
+}
+
+
+#nav_part2
+{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav_part2 h4{
+    border: 1px solid #1e1c1c89;
+    padding: 0.70vw 1.5vw ;
+    border-radius: 50px;
+    font-weight: 500;
+    color:rgba(54, 53, 53, 0.77) ;
+    font-size: 1.20vw;
+    position: relative;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+#nav_part2 h4::after{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+   bottom: -100%;
+   border-radius: 50%;
+   transition: all ease 0.4s;
+ 
+}
+
+
+
+#nav_part2 h4:hover::after
+{
+    bottom: 0;
+    border-radius: 0px;
+   
+
+}
+
+#logo
+{
+    width: 10.5vw;
+}
+
+#nav_part2 h4 a 
+{
+    text-decoration: none;
+    color:rgb(54, 53, 53);
+    position: relative;
+    z-index: 9;
+   
+}
+
+
+#nav_part2 h4:hover a{
+    color: white;
+}
+
+nav h3{
+    display: none;
+}
+
+
+#center
+{
+    height: 65vh;
+    width: 100%;
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+   
+}
+
+#left h3
+{
+    width: 25vw;
+    font-size:1.8vw ;
+    line-height: 2vw;
+}
+
+
+#right h1
+{
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
+
+
+#page_1 video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+}
+
+
+
+#hero_shape
+{
+    /* This shape will behave as wrapper sir */
+    height: 36vw;
+    width: 46vw;
+
+    position: absolute;
+   
+    right: 0;
+    top: 70vh;
+   
+}
+
+#hero_1
+{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   background:linear-gradient(#FE320A,#fe3f0a);
+     border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(40px);
+}
+#hero_2
+{
+    height: 30vw;
+    width: 30vw;
+   border-radius: 50%;
+   background:linear-gradient(#FE320A,#f39716);
+    position: absolute;
+  
+    filter: blur(25px);
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#hero_3
+{
+    height: 30vw;
+    width: 30vw;
+    background:linear-gradient(#FE320A,#f39716);
+    position: absolute;
+   border-radius: 50%;
+    filter: blur(25px);
+
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anime1 {
+
+
+    from
+    {
+        transform: translate(55% ,-3%);
+    }
+
+    to
+    {
+        transform: translate(-1% ,10%);
+
+    }
+    
+}
+
+
+@keyframes anime2 {
+
+
+    from
+    {
+        transform: translate(5% ,-5%);
+    }
+
+    to
+    {
+        transform: translate(-20% ,30%);
+
+    }
+    
+}
+
+
+/* 1:13:30  */
+
+/* PAGE 2 CSS START HERE SIR */
+
+/* this is moving text css sir */
+
+#page_2
+{
+    min-height: 100vh;
+    width: 100%;
+    /* margin: 8vw 0vw; */
+    /* margin-top: 8vw; */
+    padding-top: 8vw;
+    /* margin-bottom: 11vw; */
+    padding: 0px 2vw;
+    padding-top: 8vw;
+    padding-bottom: 14vw;
+    position: relative;
+    background-color: #EFEAE3;
+   
+}
+
+#moving-text
+{
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color:#EFEAE3 ;
+}
+/* this is apply to remove scroll bar */
+#moving-text::-webkit-scrollbar
+{
+    display: none;
+}
+.con{
+
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll_anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+.con h1
+{
+font-size: 7vw;
+display: inline-block;
+
+}
+
+#gola
+{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 1vw 3vw;
+}
+
+@keyframes scroll_anime {
+    from{
+        transform: translate(0);
+    }
+
+    to
+    {
+        transform: translate(-100%);
+    }
+    
+}
+
+
+/* 1:39:57 */
+
+
+/*  this is part_2 lower section css*/
+
+
+#page_2_lowerdiv
+{
+    height: 80vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5vw;
+    position: relative;
+    z-index: 10;
+}
+
+
+#page_2_lowerdiv h1{
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 55%;
+}
+
+
+#lower_div
+{
+    padding-top: 10vw;
+    width: 20%;
+}
+
+#lower_div img 
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+#lower_div p{
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+/* css for gooey effect in page two  */
+
+
+ #gooey
+ {
+    height: 32vw;
+    width: 32vw;
+     background: linear-gradient(to top right ,#ff2d03,#f39716) ;
+    position: absolute;
+    top: 50%;
+    left:20% ;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: gooey;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ } 
+
+
+  @keyframes gooey {
+    
+
+       from{
+
+        filter: blur(25px);
+        transform: translate(13%,-13%) skew(0 deg);
+       }
+
+       to
+       {
+
+        filter: blur(35px);
+        transform: translate(-10%,10%) skew(-12deg);
+       }
+  }
+
+
+ /* CSS for page 3 start here sir */
+
+
+ #page_3
+ {
+    min-height: 100vh;
+    width: 100%;
+    background-color:#EFEAE3;
+    padding: 4vw 0vw;
+   
+ }
+
+
+
+ /* 2:01:38 */
+
+ /* css for page 3 list item section  */
+
+ .elem{
+    width: 100%;
+    height: 150px;
+   
+    position: relative;
+    border-bottom: 1px solid #3f3e3e1e;
+    display: flex;
+    align-items: center;
+    padding: 0px 2vw;
+  
+    overflow: hidden;
+    cursor: pointer;
+   
+ 
+ }
+
+ .elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 10;
+ }
+
+  #overlay
+ {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:#FF9831;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+ 
+ } 
+
+ .elem:hover #overlay
+ {
+    top: 0;
+ }
+
+ /* responsize code for page 3  */
+ 
+
+
+
+ /* css for fixed image  */
+ @media (max-width:600px )
+ {
+
+
+
+    #page_3
+    {
+       min-height:70vh;
+       width: 100%;
+       background-color:#EFEAE3;
+       padding: 4vw 0vw;
+      
+    }
+   
+    .elem{
+        max-width: 100%;
+        height: 10vh;
+       
+        position: relative;
+        border-bottom: 1px solid #3f3e3e1e;
+        display: flex;
+       
+        align-items: center;
+        padding: 0px 2vw;
+      
+        overflow: hidden;
+        cursor: pointer;
+       
+     
+     }
+    
+     .elem h2{
+        font-size: 6vw;
+        position: relative;
+        z-index: 10;
+     }
+    
+      #overlay
+     {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color:#FF9831;
+        left: 0;
+        top: -100%;
+        transition: all ease 0.25s;
+     
+     } 
+    
+     .elem:hover #overlay
+     {
+        top: 0;
+     }
+ }
+
+ /* *********************************************************** */
+
+ #fixed-image
+ {
+       height: 30vw;
+       width :24vw;
+       background-color: rgb(122, 103, 103);
+       border-radius: 10px;  
+       position: fixed;
+       z-index: 20;
+       left: 50%;
+       top: 27%;
+       display: none;
+       background-size: cover;
+       background-position: center;
+ }
+
+  @media (max-width:600px)
+  {
+    #fixed-image
+    {
+          height: 70vw;
+          width :90vw;
+          background-color: rgb(122, 103, 103);
+          border-radius: 10px;  
+          position: fixed;
+          z-index: 20;
+          left: 5%;
+          top: 5%;
+          display: none;
+          background-size: cover;
+          background-position: center;
+    }
+  }
+
+ 
+
+
+ /* css for page 3_a IS here  */
+
+
+    #page3_A
+    {
+        height: 47vw;
+        width: 100vw;
+        background-color:#EFEAE3;
+        padding: 3vw 2vw;
+    }
+
+    #page3cont
+    {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 3vw;
+        display: flex;
+        overflow: hidden;
+
+     
+    }
+    
+      #page3_left
+      {
+        height: 100%;
+        min-width: 40%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding: 0vw 2vw;
+      }
+       
+      #page3_right
+      {
+        height: 100%;
+        min-width:60%;
+        background-color: rgb(201, 219, 219);
+        border-top-left-radius:3vw ;
+        border-bottom-left-radius: 3vw;
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1637666725970-53822683726a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      }
+
+
+      #page3_elem
+      {
+        border-left: 0.35vw solid  #504A45;
+        padding-left: 0.5vw;
+      }
+
+
+      #page3_elem button 
+    
+      {
+        background-color: black;
+        border: none;
+      }
+
+
+      #page3_elem h1{
+        font-size: 5vw;
+        color: #504A45;
+
+
+      }
+    #page3_para
+    {
+        margin-top: 1vw;
+        padding-right: 9vw;
+    }
+    #page3_para p
+    {font-weight: 100;
+        font-size: 1.25vw;
+        color: #EFEAE3;
+    }
+    
+
+/*   css for responsive ness page 3  */
+
+
+
+     @media (max-width:600px)
+     {
+        #page3_A
+        {
+            height: 60vh;
+            width: 100vw;
+            background-color:#EFEAE3;
+            padding: 2vw 2vw;
+        }
+    
+        #page3cont
+        {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            border-radius: 3vw;
+            display: flex;
+            overflow: hidden;
+    
+         
+        }
+        
+          #page3_left
+          {
+            height: 60%;
+            min-width: 50%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            padding: 0vw 2vw;
+          }
+           
+          #page3_right
+          {
+            height: 100%;
+            min-width:50%;
+            background-color: rgb(201, 219, 219);
+            border-top-left-radius:3vw ;
+            border-bottom-left-radius: 3vw;
+            background-size: cover;
+            background-position: center;
+            background-image: url("https://images.unsplash.com/photo-1637666725970-53822683726a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+          }
+    
+    
+          #page3_elem
+          {
+            border-left: 0.35vw solid  #504A45;
+            padding-left: 0.5vw;
+          }
+    
+    
+          #page3_elem button 
+        
+          {
+            background-color: black;
+            border: none;
+          }
+    
+          #page_3Heading
+          {
+            padding-top: 16vh;
+          }
+          #page3_elem h1{
+            font-size: 10vw;
+            color: #504A45;
+    
+    
+          }
+        #page3_para
+        {
+            margin-top: 1vw;
+            padding-right: 9vw;
+        }
+        #page3_para p
+        {font-weight: 100;
+            font-size: 3.5vw;
+            color: #EFEAE3;
+        }
+        
+     }
+
+
+
+ /* page 4 css
+  */
+#page_4
+{
+    height: 70vh;
+    width: 100%; 
+    background-color: #EFEAE3;
+    padding: 5vw 2vw;
+}
+
+
+
+ .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+   
+    font-size: 18px;
+   
+ 
+    justify-content: center;
+    align-items: center; 
+         border-left: 4px solid rgb(190, 187, 187);
+         padding: 0vw 2vw ;
+    
+  }
+
+  .div_wrapper img{
+    height: 10vw;
+    width: 12vw;
+  }
+
+  .div_wrapper p{
+      font-size: 1.2vw ;
+      font-weight: 100;
+  }
+  .swiper-slide {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    width: 30%;
+  } 
+
+    /* responsive code for page 4  */
+
+    @media (max-width:600px)
+    {
+        #page_4
+        {
+            height: 50vh;
+            width: 100%; 
+            background-color: #EFEAE3;
+            padding: 5vw 2vw;
+        }
+        
+        
+        
+         .swiper {
+            width: 100%;
+            height: 100%;
+          }
+        
+          .swiper-slide {
+           
+            font-size: 18px;
+           
+         
+            justify-content: center;
+            align-items: center; 
+                 border-left: 4px solid rgb(190, 187, 187);
+                 padding: 0vw 2vw ;
+            
+          }
+        
+          .div_wrapper img{
+            height: 20vw;
+            width: 12vw;
+            margin-left: 10vw;
+          }
+        
+          .div_wrapper p{
+              font-size: 3vw ;
+              font-weight: 100;
+              margin-left: 10vw;
+          }
+          .swiper-slide {
+            width: 60%;
+          }
+        
+          .swiper-slide:nth-child(1n) {
+            width: 50%;
+          }   
+    }
+
+ /* page 5 css
+  */
+  
+
+  #page_5
+{
+    height: 100vh;
+    width: 100%;
+
+
+
+}
+
+
+   /* css for footer section */
+
+#footer
+{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background-color:black;
+    color: white;
+    display: flex;
+      flex-direction: column;
+    justify-content: flex-end;
+}
+
+ 
+#footer h1{
+    font-size: 23vw;
+}
+
+#footer_div
+{
+    height: 10vh;
+    width: 100%;
+    /* background-color:#fe3f0a; */
+    display: flex;
+    align-items: center;
+   padding: 0vw 5vw;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+  
+      
+
+     
+}
+
+
+
+#footer_left
+{
+    font-size: 2vw;
+    position: relative;
+}
+
+
+#footer_right
+{
+    font-size: 1.5vw;
+    font-weight: 100;
+    position: relative;
+}
+
+#footer_subfooter
+
+{
+    height: 5vw;
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    
+}
+
+#footer_subfooter h3{
+    font-size: 1.25vw;
+    font-weight: 100;
+}
+
+
+
+#box1
+{
+    height: 50vw;
+    width: 100vw;
+    background-color:orangered;
+    position: absolute;
+    bottom: 70%;
+    right: 20%;
+    animation-name: aanime1;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     filter: blur(30px); 
+}
+@keyframes aanime1
+{
+    from{
+        transition: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(-10deg);
+    }
+} 
+
+
+#box2
+{
+    height: 50vw;
+    width: 120vw;
+    background-color:orangered;
+    position: absolute;
+    bottom: 70%;
+    animation-name: aanime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    left: 10%;
+    filter: blur(40px); 
+}
+
+@keyframes aanime2
+{
+    from{
+        transition: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(25deg);
+    }
+}
+
+/* responsive css for footer */
+
+ @media (max-width:600px) {
+
+ 
+    #footer h1{
+        font-size: 23vw;
+    }
+    #footer
+    {
+        position: fixed;
+        z-index: 9;
+        height: 100vh;
+        width: 100%;
+        bottom: 0;
+        background-color:black;
+        color: white;
+        display: flex;
+          flex-direction: column;
+        justify-content: flex-end;
+    }
+
+  
+
+
+    #footer_div
+{
+    height: 40vh;
+    width: 100%;
+    /* background-color:#fe3f0a; */
+    display: flex;
+    align-items: center;
+   padding: 0vw 5vw;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+  
+      
+
+     
+}
+#footer_left
+{
+    font-size: 7vw;
+    position: relative;
+}
+
+
+#footer_right
+{
+    font-size: 4vw;
+    font-weight: 100;
+    position: relative;
+}
+    #box1
+{
+    height: 70vw;
+    width: 120vw;
+    background-color:orangered;
+    position: absolute;
+    bottom: 70%;
+    right: 20%;
+    animation-name: aanime1;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     filter: blur(30px); 
+}
+@keyframes aanime1
+{
+    from{
+        transition: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(-40deg);
+    }
+} 
+
+
+#box2
+{
+    height: 70vw;
+    width: 120vw;
+    background-color:orangered;
+    position: absolute;
+    bottom: 70%;
+    animation-name: aanime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    left: 10%;
+    filter: blur(40px); 
+}
+
+@keyframes aanime2
+{
+    from{
+        transition: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(25deg);
+    }
+}
+ }
+
+
+
+#demo
+{
+    height: 50vw;
+    width: 100%;
+    background-color: #fe3f0a;
+}
+
+#full_scr
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.255);
+    position: fixed;
+   
+    
+     z-index: 101;
+     top: -110%;
+    transition: all ease 0.8s;
+}
+
+/* working on the responsiveness of the website */
+
+ @media (max-width:600px ){
+
+
+    #page_1
+{
+    min-height: 100vh;
+   width: 100vw;  /* // 100% */
+    background-color:#EFEAE3;
+   
+    padding: 0px 5vw;
+}
+
+nav{
+   padding: 8vw 0vw;
+    width: 100%;
+
+    
+ 
+}
+
+
+#nav_part2
+{
+    
+    display: none;
+}
+
+
+
+#logo
+{
+    position: relative;
+    width: 35vw;
+    
+  
+    
+}
+
+nav h3{
+    display: block;
+    padding: 2vw 5vw;
+    border: 1px solid #ababab;
+    border-radius: 50px;
+    font: 4vw;
+    font-weight: 200;
+  
+}
+  nav h3 i 
+  {
+    padding-right: 1vw;
+    font-weight: 200;
+    font-size: 4vw;
+  }
+
+
+
+
+
+  #center
+{
+    height: 62vh;
+    width: 100%;
+   
+    display: flex;
+    
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding: 5vw 2vw;
+    padding-bottom: 10vw;
+   flex-direction: column-reverse;
+   position: relative;
+   z-index: 9;
+}
+
+#left h3
+{
+    width: 80%;
+    font-size:5.8vw ;
+    line-height: 7vw;
+   
+  
+}
+
+
+#right h1
+{
+    font-size: 17vw;
+    line-height: 16vw;
+    text-align: right;
+}
+
+
+#page_1 video{
+    width: 94%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+    margin-left: 3%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+#hero_shape
+{
+    /* This shape will behave as wrapper sir */
+    height: 56vw;
+    width: 76vw;
+
+    position: absolute;
+   
+    right: 0;
+    top: 70vh;
+   
+}
+
+    
+
+
+#page_2
+{
+    min-height: 100vh;
+    width: 100%;
+    /* margin: 8vw 0vw; */
+    /* margin-top: 8vw; */
+    padding-top: 8vw;
+    /* margin-bottom: 11vw; */
+    padding: 0px 2vw;
+    padding-top: 8vw;
+    padding-bottom: 14vw;
+    position: relative;
+    background-color: #EFEAE3;
+   
+}
+
+#moving-text
+{
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color:#EFEAE3 ;
+}
+/* this is apply to remove scroll bar */
+#moving-text::-webkit-scrollbar
+{
+    display: none;
+}
+.con{
+
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll_anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+.con h1
+{
+font-size: 18vw;
+display: inline-block;
+
+}
+
+#gola
+{
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 2vw 3vw;
+}
+
+@keyframes scroll_anime {
+    from{
+        transform: translate(0);
+    }
+
+    to
+    {
+        transform: translate(-100%);
+    }
+    
+}
+
+
+/* 1:39:57 */
+
+
+/*  this is part_2 lower section css*/
+
+
+#page_2_lowerdiv
+{
+    height: 70vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3vw 4vw;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+}
+
+
+#page_2_lowerdiv h1{
+    font-size: 8.5vw;
+    line-height: 8vw;
+    width: 100%;
+}
+
+
+#lower_div
+{
+    padding-top: 10vw;
+    width: 70%;
+}
+
+#lower_div img 
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#lower_div p{
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 3vw;
+}
+
+/* css for gooey effect in page two  */
+
+
+ #gooey
+ {
+    height: 62vw;
+    width: 62vw;
+     background: linear-gradient(to top right ,#ff2d03,#f39716) ;
+    position: absolute;
+    top: 50%;
+    left:20% ;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: gooey;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ } 
+
+
+  @keyframes gooey {
+    
+
+       from{
+
+        filter: blur(25px);
+        transform: translate(13%,-13%) skew(0 deg);
+       }
+
+       to
+       {
+
+        filter: blur(35px);
+        transform: translate(-10%,10%) skew(-12deg);
+       }
+  }
+
+    
+ }
+
+
+
+ /* 3:37:06 */
+
+/* css for initial loader  */
+ #loader {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+#loader h1{
+   background: linear-gradient( to right ,orange,orangered);
+   font-size: 4vw;
+   color: transparent;
+   -webkit-background-clip: text;
+   position: absolute;
+   opacity: 0;
+   animation-name: load;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    
+}
+
+
+#loader h1:nth-child(2)
+{
+   animation-delay: 2s;
+   
+}
+#loader h1:nth-child(3)
+{
+    animation-delay: 3s;
+   
+}
+@keyframes load {
+
+
+    0%
+    {
+        opacity: 0;
+    }
+    
+    10%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+
+
+@media (max-width:600px )
+{
+    #loader h1{
+       
+        font-size: 10vw;
+     
+         
+     }
+      
+}
